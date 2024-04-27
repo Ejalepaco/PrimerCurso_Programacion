@@ -58,7 +58,43 @@ public class Biblioteca { // Controller
         }
     }
 
-    
+    public Libro buscarLibro(String isbn) {
+        Libro libroBuscado = null;
+        // Iteramos sobre todo el catalogo
+        for (Libro libro: catalogo) {
+            // Buscamos el libro cuyo isbn sea igual al que queremos encontrar
+            if (libro.getIsbn().equals(isbn)){
+                libroBuscado = libro;
+                // muestro los datos
+                System.out.println("Libro buscado:");
+                libro.mostrarDatos();
+            }
+        }
+
+        // Si no hemos encontrado el libro, es que no está
+        if (libroBuscado == null) {
+            System.out.println("Libro con isbn " + isbn + " no encontrado");
+        }
+
+        // Devuelvo el libro para poder reusar esta función en eliminarLibro
+        return libroBuscado;
+    }
+
+    // Eliminar libros del catalogo
+    public void eliminarLibro(String isbn) {
+        // Buscamos el libro a eliminar
+        Libro libro = buscarLibro(isbn);
+
+        // Si no lo encuentra, salimos sin hacer nada
+        if (libro == null) return;
+
+        System.out.println("Libro con isbn " + isbn + " borrado");
+        // Si lo encuentra, lo borramos
+        catalogo.remove(libro);
+    }
+
+
+
 
 
 }

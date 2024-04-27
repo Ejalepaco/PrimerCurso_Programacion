@@ -27,5 +27,9 @@ public class Entrada {
 
         biblioteca.mostrarCatalogo();
 
+        biblioteca.buscarLibro("8401027470"); // buscamos y imprimimos libro existente
+        biblioteca.eliminarLibro("8401027470"); // lo eliminamos
+        biblioteca.buscarLibro("8401027470"); // mostrará mensaje de que no existe el libro
+
     }
 }
