@@ -1,7 +1,5 @@
 package EjercicioDni;
 
-import EjercicioFormulario.LongitudDniNoValidaException;
-
 import java.util.Scanner;
 
 public class Formulario {
