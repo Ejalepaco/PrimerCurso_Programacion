@@ -46,6 +46,10 @@ public class Formulario {
                         if (dni.length() != 9) {
                             throw new LongitudDniNoValidaException("Longitud no valida");
                         }
+
+                        if (!Character.isLetter(dni.charAt(dni.length()-1))){
+                            throw new UltimoDigitoNoLetraException("El último digito debe ser letra");
+                        }
                         break;
                     case 4:
                         if (nombre != null && apellido != null && dni != null) {
@@ -59,6 +63,8 @@ public class Formulario {
             } catch (LongitudDniNoValidaException e) {
                 System.err.println(e.getMessage());
 
+            } catch (UltimoDigitoNoLetraException e) {
+                System.err.println(e.getMessage());
             }
         } while (!datosCompletos);
 
