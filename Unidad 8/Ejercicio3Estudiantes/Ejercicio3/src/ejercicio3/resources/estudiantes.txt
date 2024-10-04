@@ -1,0 +1,6 @@
+// Queremos leer los datos del fichero de texto adjunto estudiantes.txt, en el que cada
+// linea contiene los datos de un estudiante, separados por comas: nombre, edad, y las 3 notas.
+
+Paco,8,9,7
+Lucas,6,4,2
+Paula,3,1,9

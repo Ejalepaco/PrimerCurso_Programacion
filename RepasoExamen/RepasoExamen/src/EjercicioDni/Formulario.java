@@ -67,7 +67,7 @@ public class Formulario {
                 System.err.println(e.getMessage());
             }
         } while (!datosCompletos);
-
+        System.out.println("Mostrando los datos del usuario1");
         System.out.println(nombre);
         System.out.println(apellido);
         System.out.println(dni);

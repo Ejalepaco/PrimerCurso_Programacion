@@ -12,7 +12,7 @@ public class Entrada {
         // creamos los dos coches con los datos
 
         Coche coche1 = new Coche("Mazda", "cx30", "6198hwj", 140,
-                190, 0);
+                260, 0);
 
         Coche coche2 = new Coche("Ford", "gt40", "7109mdm", 135,
                 205, 0);

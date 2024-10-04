@@ -1,0 +1,2 @@
+Nombre: Juan Edad: 27 Nota1: 3.2 Nota2: 5.6 Nota3: 8.3
+Nombre: Ana Edad: 35 Nota1: 7.4 Nota2: 6.5 Nota3: 9

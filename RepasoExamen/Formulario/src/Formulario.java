@@ -41,6 +41,8 @@ public class Formulario {
                             throw new LongitudDNINoValidaException("Longitud no valida");
                         }
 
+                        //if (dni.charAt())
+
                         break;
                     case 4:
                         if (nombre != null && apellido != null && dni != null) {
